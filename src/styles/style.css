@@ -1,123 +1,3 @@
-@import './edit-form.css';
-
-:root {
-  --white: #fff;
-  --extra-light-grey: #f3f3f3;
-  --lighter-grey: #e3e4e4;
-  --grey: #363636;
-  --mineshaft: #323232;
-  --dark-grey: #303030;
-  --another-black: #222;
-  --darker-black: #1e1e1e;
-
-  --red: #d92b2b;
-  --red-on-dark: #ff5050;
-}
-
-#toggl-button-edit-form {
-  --main-font: Roboto, Helvetica, sans-serif;
-
-  --main-bg-color: var(--extra-light-grey);
-  --base-color: var(--white);
-  --active-color: var(--extra-light-grey);
-  --border-color: var(--extra-light-grey);
-  --font-color: var(--another-black);
-  --danger-color: var(--red);
-
-  position: absolute;
-  width: 360px;
-  max-width: 360px;
-
-  padding: 1rem 1rem 1.5rem !important;
-  -webkit-box-shadow: 0 1px 3px rgba(128, 128, 128, 0.5);
-  -moz-box-shadow: 0 1px 3px rgba(128, 128, 128, 0.5);
-  box-shadow: 0 1px 3px rgba(128, 128, 128, 0.5);
-  -webkit-border-radius: 3px;
-  border-radius: 8px;
-  background-color: var(--base-color);
-  z-index: 999999;
-  box-sizing: border-box;
-}
-
-#toggl-button-edit-form.dark {
-  --main-bg-color: var(--dark-grey);
-  --base-color: var(--darker-black);
-  --active-color: var(--grey);
-  --border-color: var(--dark-grey);
-  --font-color: var(--lighter-grey);
-  --danger-color: var(--red-on-dark);
-}
-
-#toggl-button-edit-form * {
-  box-sizing: border-box;
-}
-
-.toggl-integration #toggl-button-duration-row {
-  display: none;
-}
-
-.toggl-button-edit-form-button, #toggl-button-edit-form .toggl-button-edit-form-button {
-  display: inline-block !important;
-  position: initial !important;
-}
-
-.toggl-button-edit-form-button, #toggl-button-edit-form .toggl-button svg,
-.toggl-button-edit-form-button, #toggl-button-edit-form .toggl-button svg + span {
-  display: inline-block !important;
-  position: initial !important;
-  vertical-align: middle;
-}
-
-.toggl-button {
-  display: inline-block !important;
-  user-select: none;
-  -moz-user-select: none;
-  line-height: 20px;
-  height: 20px;
-  font-size: 14px;
-  text-decoration: none !important;
-}
-
-.toggl-button svg {
-  width: 19px;
-  height: 19px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.toggl-button span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.toggl-button.min {
-  height: 19px;
-  width: 19px;
-  overflow: hidden;
-}
-
-.toggl-button.min:not(.active) svg path.background-circle {
-  fill : grey !important;
-}
-
-.toggl-button.min:not(.active) svg path.play-icon {
-  fill : white !important;
-}
-
-#toggl-button-project-filter,
-#toggl-button-tag-filter {
-  font-size: 13px !important;
-  margin: 0 !important;
-  padding: 0 10px;
-  width: 100% !important;
-  box-sizing: border-box !important;
-  padding-right: 28px !important;
-}
-
-.toggl-button-hidden, *.toggl-button-hidden {
-  display: none !important;
-}
-
 /********* Fibery ***********/
 .toggl-button.fibery {
   color: white;
@@ -220,13 +100,17 @@ SingleTaskPaneToolbar .toggl-button.asana-board, /* new ui v1 */
   opacity: 0;
 }
 
-.BaseCard:hover .toggl-button.asana-board-view {
+.BoardCard--hover .toggl-button.asana-board-view {
+  opacity: 1;
+}
+
+.BoardCardLayout.toggl:hover .toggl-button.asana-board-view {
   opacity: 1;
 }
 
 /********* PODIO *********/
 .toggl-button.podio {
-  width: 65px;
+  width: 100px;
   margin-left: 4px;
 }
 
@@ -258,7 +142,7 @@ SingleTaskPaneToolbar .toggl-button.asana-board, /* new ui v1 */
   margin-left: 8px;
   margin-top: 0;
   position: relative; /* margin interferes with Jira layout, using relative pos instead */
-  top: 0;
+  top: 2px;
   cursor: pointer;
 }
 
@@ -452,12 +336,7 @@ a.toggl-button.toggl-plan {
 }
 /********* ZENDESK *********/
 .toggl-button.zendesk:not(.toggl-button-edit-form-button) {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0 30px 25px 24px;
-
-  font-weight: initial;
+  margin: 10px 10px 0 0;
 }
 
 [data-test-id="customer-context-tab-navigation"] .toggl-button.toggl-button.zendesk-agent-ws {
@@ -469,6 +348,10 @@ a.toggl-button.toggl-plan {
   margin-right: 15px;
 
   font-weight: initial;
+}
+
+.toggl-button.zendesk--2021 {
+  align-self: center;
 }
 
 /********* ANYDO *********/
@@ -708,6 +591,13 @@ a.toggl-button.toggl-plan {
   text-decoration: none;
 }
 
+.toggl-button.teamwork.min {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px !important;
+}
+
 /********* GOOGLE MAIL *********/
 .toggl-button.google-mail:not(.toggl-button-edit-form-button) {
   margin-left: 15px;
@@ -729,24 +619,31 @@ a.toggl-button.toggl-plan {
   flex-grow: 0;
 }
 
-.backlog-table-body .user-story-name a.toggl-button.taiga {
+.backlog-table-body .user-story-link a.toggl-button.taiga {
   margin-top: 0;
   margin-right: 0.5rem;
   text-decoration: none;
   flex-grow: 0;
+  position: relative;
+  top: 4px;
 }
 
 .detail-title-wrapper a.toggl-button.taiga {
-  margin: 8px 5px 0px 4px;
+  margin: 8px 5px 0 4px;
   text-decoration: none;
   flex-grow: 0;
 }
 
+.card .card-title.toggl {
+  display: flex;
+}
+
 .epic-row a.toggl-button,
 .card-title a.toggl-button {
-  margin: 0 0.25rem 0 0;
+  margin: 0 0.3rem 0 0;
   position: relative;
-  top: 3px;
+  top: -1px;
+  min-width: 19px;
 }
 
 .column-fold .card-title a.toggl-button.taiga.active {
@@ -756,7 +653,6 @@ a.toggl-button.toggl-plan {
 
 .issues-table .row a.toggl-button.taiga {
   margin-top: 0;
-  margin-right: 0.5rem;
   text-decoration: none;
   flex-grow: 0;
 }
@@ -869,9 +765,14 @@ a.toggl-button.toggl-plan {
 
 /********* WRIKE *********/
 .toggl-button.wrike {
+  display: flex !important;
+  height: 24px;
+  align-items: center;
+  font-size: 12px;
+  gap: 4px;
   text-decoration: none;
   color: rgb(80, 79, 79);
-  margin: 10px 15px 10px 0;
+  padding: 0 0 0 16px;
 }
 
 /********* ASSEMBLA *********/
@@ -1086,16 +987,9 @@ li > .toggl-button.phabricator {
   margin-right: 18px;
 }
 
-/********* ODOO *********/
-.toggl-button.odoo {
-  align-self: center;
-  margin-left: 0.4rem;
-}
-
 /********* OPENPROJECT *********/
 .work-packages--show-view .toggl-button.openproject {
-  margin: 0.4rem;
-  margin-right: 10px;
+  margin-bottom: 0.4rem;
 }
 
 /********* ZUBE *********/
@@ -1176,6 +1070,29 @@ a.toggl-button.workfront.min {
   padding-left: 27px;
 }
 
+/********* SHORTCUT *********/
+.toggl-button.toggl-shortcut:not(.toggl-button-edit-form-button) {
+  width: 100%;
+  margin: 6px;
+  height: 23px;
+}
+
+.toggl-button.toggl-shortcut svg {
+  height: 24px;
+  width: 24px;
+  margin-left: 1px;
+}
+
+.toggl-button.toggl-shortcut span {
+  padding-left: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.toggl-button-shortcut-wrapper {
+  padding: 0 !important;
+}
+
 /********* TEAMLEADER *********/
 .toggl-button.teamleader {
   background: none;
@@ -1183,10 +1100,8 @@ a.toggl-button.workfront.min {
 
 /********* INTERCOM *********/
 .toggl-button.intercom {
-  float: right;
-  text-decoration: none;
-  margin-top: 6px;
-  margin-right: 5px;
+  margin-top: 3px;
+  margin-left: 10px;
 }
 
 /********* PROCESSWIRE *********/
@@ -1290,7 +1205,11 @@ a.toggl-button.workfront.min {
 
 /********* AIRTABLE ********/
 .toggl-button.airtable {
+  margin-top: 5px;
   margin-left: 30px;
+  position: relative;
+  bottom: 5px;
+  float: right;
 }
 
 /********* PROTONMAIL *********/
@@ -1559,3 +1478,9 @@ body.notion-body.dark .toggl-button.notion {
   font-weight: bold;
   position: relative;
   top: -3px;
+}
+
+/********* Bugsnag *********/
+.toggl-button.bugsnag {
+  margin-left: 1rem;
+}

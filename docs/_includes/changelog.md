@@ -1,3 +1,136 @@
+## [1.72.3](https://github.com/toggl/toggl-button/compare/1.72.2...1.72.3) (2021-11-25)
+
+
+### Bug Fixes
+
+* **Airtable:** Fix showing Toggl Button in Airtable ([#2023](https://github.com/toggl/toggl-button/issues/2023)) ([897d060](https://github.com/toggl/toggl-button/commit/897d0607f0433b580e6fe9e5cbfbb0f4c0ff26fa))
+
+## [1.72.2](https://github.com/toggl/toggl-button/compare/1.72.1...1.72.2) (2021-11-23)
+
+
+### Bug Fixes
+
+* **github:** Fix projects page numElem not passing ([#1998](https://github.com/toggl/toggl-button/issues/1998)) ([36d68cc](https://github.com/toggl/toggl-button/commit/36d68ccc38f98723fa23fe71bc08eb98002985a6))
+* **zendesk:** Include ticket id in description ([#1996](https://github.com/toggl/toggl-button/issues/1996)) ([c28f1f3](https://github.com/toggl/toggl-button/commit/c28f1f338def941f4670304f9aa769ae8c21c7f7)), closes [#1995](https://github.com/toggl/toggl-button/issues/1995)
+
+## [1.72.1](https://github.com/toggl/toggl-button/compare/1.72.0...1.72.1) (2021-11-23)
+
+
+### Bug Fixes
+
+* **any.do:** Any.do integration ([#1987](https://github.com/toggl/toggl-button/issues/1987)) ([1b7a885](https://github.com/toggl/toggl-button/commit/1b7a8850b58217b634212680bf3f6e8e6682d6fc)), closes [#1799](https://github.com/toggl/toggl-button/issues/1799) [#1799](https://github.com/toggl/toggl-button/issues/1799)
+
+# [1.72.0](https://github.com/toggl/toggl-button/compare/1.71.0...1.72.0) (2021-11-22)
+
+
+### Features
+
+* Add support for shortuct (previously clubhouse) ([#2006](https://github.com/toggl/toggl-button/issues/2006)) ([208fe9c](https://github.com/toggl/toggl-button/commit/208fe9c3a54c4a24cc51d22a05ed78f96b47920f))
+
+# [1.71.0](https://github.com/toggl/toggl-button/compare/1.70.8...1.71.0) (2021-11-03)
+
+
+### Features
+
+* Add Bugsnag integration ([bb4634c](https://github.com/toggl/toggl-button/commit/bb4634cc002a82c67be0d94ecbb57bb06c143948))
+
+## [1.70.8](https://github.com/toggl/toggl-button/compare/1.70.7...1.70.8) (2021-10-20)
+
+
+### Bug Fixes
+
+* **notion:** Move button to top of the page on all cases ([82b3445](https://github.com/toggl/toggl-button/commit/82b34450cbdfb80306545a4f768b6419580375cc)), closes [#2012](https://github.com/toggl/toggl-button/issues/2012)
+
+## [1.70.7](https://github.com/toggl/toggl-button/compare/1.70.6...1.70.7) (2021-09-28)
+
+
+### Bug Fixes
+
+* **idb:** Fix IDB initialization ([#2013](https://github.com/toggl/toggl-button/issues/2013)) ([9d5cdf1](https://github.com/toggl/toggl-button/commit/9d5cdf178cb3f062023edf57034fc0a5b3df2cb0)), closes [#2004](https://github.com/toggl/toggl-button/issues/2004)
+
+## [1.70.6](https://github.com/toggl/toggl-button/compare/1.70.5...1.70.6) (2021-09-17)
+
+
+### Bug Fixes
+
+* **to-do:** Fix project selector for MS To-Do ([#2001](https://github.com/toggl/toggl-button/issues/2001)) ([6c9b288](https://github.com/toggl/toggl-button/commit/6c9b288da974867da2b5b12a20bb632822515331)), closes [#1976](https://github.com/toggl/toggl-button/issues/1976)
+
+## [1.70.5](https://github.com/toggl/toggl-button/compare/1.70.4...1.70.5) (2021-09-06)
+
+
+### Bug Fixes
+
+* **asana:** Prevent multiple buttons on board view ([c21df5f](https://github.com/toggl/toggl-button/commit/c21df5f6175b38023b14454e3a1f6c3b60657151)), closes [#1958](https://github.com/toggl/toggl-button/issues/1958)
+
+## [1.70.4](https://github.com/toggl/toggl-button/compare/1.70.3...1.70.4) (2021-08-10)
+
+
+### Bug Fixes
+
+* **zendesk:** Restore previous Zendesk integrations ([#1994](https://github.com/toggl/toggl-button/issues/1994)) ([cf68456](https://github.com/toggl/toggl-button/commit/cf68456b9aef8784dc0b306541d7ac5b0f50025a)), closes [#1992](https://github.com/toggl/toggl-button/issues/1992)
+
+## [1.70.3](https://github.com/toggl/toggl-button/compare/1.70.2...1.70.3) (2021-07-28)
+
+
+### Bug Fixes
+
+* **intercom:** Handle Intercom in 2021 ([#1977](https://github.com/toggl/toggl-button/issues/1977)) ([5dfa113](https://github.com/toggl/toggl-button/commit/5dfa1132f4c5c8a565b739f766e6c59b9344418c))
+* **zendesk:** Add support for new Zendesk UI ([#1985](https://github.com/toggl/toggl-button/issues/1985)) ([b8c2f3f](https://github.com/toggl/toggl-button/commit/b8c2f3febafefde75d3bc9dca792b088586488df)), closes [#1979](https://github.com/toggl/toggl-button/issues/1979)
+
+## [1.70.2](https://github.com/toggl/toggl-button/compare/1.70.1...1.70.2) (2021-05-20)
+
+
+### Bug Fixes
+
+* **sendMessage:** Assert errors being thrown ([9ae9a81](https://github.com/toggl/toggl-button/commit/9ae9a81d92aff4d12c97d6547e2ff8e784c0a720))
+* **zendesk:** Fix stop not working ([0f8fba6](https://github.com/toggl/toggl-button/commit/0f8fba68a71bcc91e30b633b54a3a2dd80134589))
+
+## [1.70.1](https://github.com/toggl/toggl-button/compare/1.70.0...1.70.1) (2021-05-12)
+
+
+### Bug Fixes
+
+* **background:** Update websocket url ([1e83023](https://github.com/toggl/toggl-button/commit/1e83023e58b45fbaba07c2313df17ef1acd92eaf))
+
+# [1.70.0](https://github.com/toggl/toggl-button/compare/1.69.8...1.70.0) (2021-05-12)
+
+
+### Bug Fixes
+
+* **bitrix:** Fix Bitrix iframes ([55c03be](https://github.com/toggl/toggl-button/commit/55c03befeace0457e565f5a78e414cf80a761401)), closes [#1883](https://github.com/toggl/toggl-button/issues/1883)
+* **bugsnag:** Treat empty hostnames ([b5e67d9](https://github.com/toggl/toggl-button/commit/b5e67d9af13b58ddcc4a7ff1a37131fcbeb7ec8a))
+* **style:** Add closing braces ([fd6c9c7](https://github.com/toggl/toggl-button/commit/fd6c9c71eb8cf23e3b9217f1f81675bc73358bb0))
+
+
+### Features
+
+* **core:** Handle iframes ([216d0be](https://github.com/toggl/toggl-button/commit/216d0bed6ae9b62be1e77e9dbfde6ab75e7e863d))
+
+## [1.69.8](https://github.com/toggl/toggl-button/compare/1.69.7...1.69.8) (2021-04-20)
+
+
+### Bug Fixes
+
+* **bugsnag:** 5de0b5e4f79de300196e4f1b ([f3f4681](https://github.com/toggl/toggl-button/commit/f3f46817ead06294aec15346a9e5865233562238))
+* **bugsnag:** Fix "Missing host permission for the tab" ([9614b55](https://github.com/toggl/toggl-button/commit/9614b55781cb534fa22d97336a0f318508eb25e1))
+* **bugsnag:** Fixes 6079b3d1d7635b0008abd5c3 ([8fb27e4](https://github.com/toggl/toggl-button/commit/8fb27e44eae5001236a86a3c86003c70963a2dba))
+* **url:** Treat empty URLs ([ecaa634](https://github.com/toggl/toggl-button/commit/ecaa634feacb4f1254a89be565d3a56eba11587d)), closes [#1944](https://github.com/toggl/toggl-button/issues/1944)
+
+## [1.69.7](https://github.com/toggl/toggl-button/compare/1.69.6...1.69.7) (2021-04-16)
+
+
+### Bug Fixes
+
+* **bugsnag:** Await for fetchUser ([ba3572a](https://github.com/toggl/toggl-button/commit/ba3572a9c52e326b704f19908208ebf6703fa275)), closes [#1880](https://github.com/toggl/toggl-button/issues/1880)
+* **bugsnag:** Correct usage of onMessage listener ([5b3d204](https://github.com/toggl/toggl-button/commit/5b3d20410697dc7fae2041d0e44a267de4fb8db9)), closes [#1942](https://github.com/toggl/toggl-button/issues/1942)
+
+## [1.69.6](https://github.com/toggl/toggl-button/compare/1.69.5...1.69.6) (2021-04-16)
+
+
+### Bug Fixes
+
+* **zendesk:** Fix Agent workspace TE description ([b36f028](https://github.com/toggl/toggl-button/commit/b36f0284045bee1036b328a3bce5ede9df2bc234)), closes [#1880](https://github.com/toggl/toggl-button/issues/1880)
+
 ## [1.69.5](https://github.com/toggl/toggl-button/compare/1.69.4...1.69.5) (2021-03-03)
 
 
